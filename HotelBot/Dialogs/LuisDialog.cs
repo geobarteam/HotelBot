@@ -33,7 +33,9 @@ namespace HotelBot.Dialogs
         public async Task Greeting(IDialogContext context, LuisResult result)
         {
             //context.Call(new GreetingDialog(), CallBack);
-            await context.PostAsync("Hi I'm John Bot, how can I help you?");
+    
+            var userName = context.Activity.From.Name;
+            await context.PostAsync($"Hi {userName} I'm John Bot, how can I help you?");
             context.Wait(MessageReceived);
         }
 
