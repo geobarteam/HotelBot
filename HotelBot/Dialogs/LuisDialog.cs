@@ -11,7 +11,7 @@ using Microsoft.Bot.Builder.Luis.Models;
 
 namespace HotelBot.Dialogs
 {
-    [LuisModel("00e967f8-18fe-4852-8e77-a758a3f45a6c", "1e117a3da9204470adf8562aed349cb9")]
+    [LuisModel("00e967f8-18fe-4852-8e77-a758a3f45a6c", "enter api key")]
     [Serializable]
     public class LuisDialog: LuisDialog<RoomsReservation>
     {
